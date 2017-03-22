@@ -31,8 +31,10 @@ int main(int argc, char const *argv[]) {
 	aBook.setGenre(title);
 
 	cout << "Give me the book's price: ";
-	cin >> price;
-	aBook.setPrice(price);
+	do{
+		getline(cin, title);
+	}while(aBook.numberValidator(title));
+	aBook.setPrice(aBook.convertString(title));
 
 	// Getting the values for the CD object.
 	cout << "------| CD data. |------" << '\n';
@@ -49,8 +51,10 @@ int main(int argc, char const *argv[]) {
 	aCD.setGenre(title);
 
 	cout << "Give me the CD's price: ";
-	cin >> price;
-	aCD.setPrice(price);
+	do{
+		getline(cin, title);
+	}while(aCD.numberValidator(title));
+	aCD.setPrice(aCD.convertString(title));
 
 	// Finally getting the values for the megazine object and assigning them
 	cout << "------| Megazine data. |------" << '\n';
@@ -63,8 +67,10 @@ int main(int argc, char const *argv[]) {
 	aMegazine.setEdition(title);
 
 	cout << "Give me the megazine's price: ";
-	cin >> price;
-	aMegazine.setPrice(price);
+	do{
+		getline(cin, title);
+	}while(aMegazine.numberValidator(title));
+	aMegazine.setPrice(aMegazine.convertString(title));
 
 	// Print the state of every object.
 	cout << "\n\n------| Book data. |------" << '\n';

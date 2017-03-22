@@ -16,6 +16,7 @@ public:
 	bool borrowStuff();
 	bool giveBackStuff();
 	bool numberValidator(std::string number);
+	int convertString(std::string number);
 
 };
 
