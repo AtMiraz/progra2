@@ -25,7 +25,8 @@ int main(int argc, char const *argv[]) {
 	maybeACat.setTailLength(20);
 	maybeACat.setBootBrand("stuff aasdasd");
 	maybeACat.setBootSize("12");
-// Printing shit
+
+	// Printing all the stuff
 
 	cout << "Father's cat data." << '\n';
 	cout << fatherCat.getName();
