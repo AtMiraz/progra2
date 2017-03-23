@@ -13,6 +13,9 @@ protected:
 
 public:
 
+	void setQuantity(int numberOfEverything);
+	int getQuantity();
+	int getMaxQuantity();
 	bool borrowStuff();
 	bool giveBackStuff();
 	bool numberValidator(std::string number);
