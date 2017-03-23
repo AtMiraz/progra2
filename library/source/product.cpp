@@ -1,5 +1,26 @@
 #include "../includes/product.h"
 #include <sstream>
+
+
+void product::setQuantity(int numberOfEverything){
+
+  quantity = numberOfEverything;
+  maxQuantity = numberOfEverything;
+
+}
+
+int product::getQuantity(){
+
+  return quantity;
+
+}
+
+int product::getMaxQuantity(){
+
+  return maxQuantity;
+
+}
+
 bool product::borrowStuff(){
 
   if(quantity > 0){
@@ -15,7 +36,7 @@ bool product::borrowStuff(){
 
 bool product::giveBackStuff(){
 
-  if(quantity <= maxQuantity){
+  if(quantity < maxQuantity){
 
     quantity++;
     return true;
